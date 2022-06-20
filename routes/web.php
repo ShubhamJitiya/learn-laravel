@@ -17,7 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/demo/{name}', function($name){ 
+Route::get('/demo/{name}/{id?}', function($name, $id){ 
+    echo $id;
     echo $name;
 });
 
