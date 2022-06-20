@@ -14,11 +14,13 @@
 
 <body>
 
-    <h1>Welcome, {{$name ?? "Guest"}}</h1>
-    @unless ($name =="shubham")
-        Then name is not shubham
-    @endunless
-
+    <h1>
+        
+       @isset($name)
+       Welcome, {{$name}}
+       @endisset
+    </h1>
+    
 </body>
 
 </html>
