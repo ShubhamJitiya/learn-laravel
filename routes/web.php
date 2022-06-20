@@ -16,3 +16,24 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/demo', function(){
+    echo "Hello, world";
+});
+
+
+Route::post('/test', function(){
+    echo "can't be accessed, can be used with form & postman";
+});
+
+Route::any('/getpost', function(){
+    echo "can be get or post, not a valid method - provided by laravel";
+});
+
+/* 
+1. Routing files
+2. How to manage
+3. Custom routes
+*/
+
+
