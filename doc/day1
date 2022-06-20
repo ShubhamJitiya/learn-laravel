@@ -1,0 +1,8 @@
+Initial setup
+-------------|
+ref: https://laravel.com/docs/9.x#getting-started-on-windows
+
+cd - goto htdocs and write "cd" to load current dir in cmd 
+	laravel new example-app --github="--public"
+	laravel new <project_name> - create new project
+php artisan serve - load site at port
