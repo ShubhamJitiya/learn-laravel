@@ -1,6 +1,27 @@
 Blade Template
+doc: https://laravel.com/docs/9.x/blade#introduction
 
-1. What?
+1. What? 
+https://laravel.com/docs/9.x/blade#introduction
+
+    - Template engine
+    - Its own loops, conditional statements
+    - crete view file using .blade.php extension not ".php"
+    
 2. Displaying data
+https://laravel.com/docs/9.x/blade#displaying-data
+
+    - php:
+
+    <?php
+        echo $name;
+    ?>
+    - laravel blade: 
+        1. {{}} - doesn't decode html print as it is
+        2. {!! <h2> Name: </h2>!!} - ecode html and executes it
+
 3. Blade directives
+https://laravel.com/docs/9.x/blade#blade-directives
+
+    - @if, @elseif, @end @endif
 4. Creating layouts in blade Template

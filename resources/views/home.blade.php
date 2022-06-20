@@ -15,15 +15,9 @@
 <body>
 
     <h1>Welcome, {{$name ?? "Guest"}}</h1>
-
-
-    @if($name == "")
-        {{"Name is empty"}}
-    @elseif($name != 'shubham')
-        {{"Name is incorrect"}}
-    @else
-        {{"name is not empty"}}
-    @endif
+    @unless ($name =="shubham")
+        Then name is not shubham
+    @endunless
 
 </body>
 
