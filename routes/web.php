@@ -29,6 +29,9 @@ Route::post('/test', function(){
 Route::any('/getpost', function(){
     echo "can be get or post, not a valid method - provided by laravel";
 });
+Route::put('/getpost', function(){
+    echo "Other methods are put, patch & delete";
+});
 
 /* 
 1. Routing files
