@@ -12,3 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/{name?}', function($name = null){
+    $data = compact('name');
+    return view('home')->with($data); //home.blade is to be understood
+    
+
+});
