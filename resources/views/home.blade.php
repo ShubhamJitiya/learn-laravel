@@ -13,14 +13,20 @@
 </head>
 
 <body>
-    
-    @for ($i = 1; $i <=10; $i++)
-    <i class="fas fa-h2    ">
-        {{$i}}      
-    </i>
-    @endfor
 
-    
+
+    @php
+    $i = 1;
+    @endphp
+
+    @while ($i<10) 
+        <i class="fas fa-h2    ">
+            {{$i}}
+        </i>
+        @php
+            $i++
+        @endphp
+    @endwhile 
 </body>
 
 </html>
