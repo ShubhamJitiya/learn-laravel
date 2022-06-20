@@ -13,13 +13,13 @@
 </head>
 
 <body>
+    
+    @for ($i = 1; $i <=10; $i++)
+    <i class="fas fa-h2    ">
+        {{$i}}      
+    </i>
+    @endfor
 
-    <h1>
-        
-       @isset($name)
-       Welcome, {{$name}}
-       @endisset
-    </h1>
     
 </body>
 
