@@ -18,6 +18,11 @@
         @if ($i == 5)
             {{-- @break --}}
             {{-- @continue --}}
+
+
+            {{-- This is comment --}}
+
+            
         @endif
         {{$i}}
     @endfor
