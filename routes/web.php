@@ -17,9 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/demo/{name}/{id?}', function($name, $id){ 
-    echo $id;
-    echo $name;
+//Send data to view and access there
+Route::get('/demo/{name}/{id?}', function($name, $id = null){ 
+   $data = compact('name', 'id'); //Array, takes var names as parameter
+   return view('demo')->with($data);
 });
 
 
