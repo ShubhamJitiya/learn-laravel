@@ -24,4 +24,14 @@ https://laravel.com/docs/9.x/blade#displaying-data
 https://laravel.com/docs/9.x/blade#blade-directives
 
     - @if, @elseif, @end @endif
+    - @unless @endunless
+    - @isset @endisset
+    - @for
+    - @while 
+    - @foreach
+    - @break & continue
 4. Creating layouts in blade Template
+    - @yield
+    - @secion
+    - @extends
+    
